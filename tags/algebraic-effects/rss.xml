@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title> - algebraic effects</title>
+      <link>https://yotamdvir.github.io</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://yotamdvir.github.io/tags/algebraic-effects/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>An Algebraic Theory for Shared-State Concurrency</title>
+          <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://yotamdvir.github.io/talks/an-algebraic-theory-for-shared-state-concurrency/</link>
+          <guid>https://yotamdvir.github.io/talks/an-algebraic-theory-for-shared-state-concurrency/</guid>
+          <description></description>
+      </item>
+      <item>
+          <title>An Algebraic Theory for Shared-State Concurrency</title>
+          <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
+          <author>Yotam Dvir</author>
+          <link>https://yotamdvir.github.io/publications/an-algebraic-theory-for-shared-state-concurrency/</link>
+          <guid>https://yotamdvir.github.io/publications/an-algebraic-theory-for-shared-state-concurrency/</guid>
+          <description></description>
+      </item>
+    </channel>
+</rss>
