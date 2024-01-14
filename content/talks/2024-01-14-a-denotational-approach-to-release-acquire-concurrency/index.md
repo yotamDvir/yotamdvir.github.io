@@ -9,5 +9,4 @@ tags = ["concurrency", "weak memory", "denotational semantics"]
 [extra]
 venue="Principle of Programming Languages"
 pdf = "presentation"
-youtube = ""
 +++
