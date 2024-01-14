@@ -1,5 +1,5 @@
 +++
-title="An Algebraic Theory for Shared-State Concurrency"
+title="A Denotational Approach to Release/Acquire Concurrency"
 slug="popl-24"
 
 [taxonomies]
