@@ -1,5 +1,6 @@
 +++
 title="An Algebraic Theory for Shared-State Concurrency"
+slug="aplas-22"
 
 [taxonomies]
 categories = ["Conference", "Presentation"]
