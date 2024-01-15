@@ -9,4 +9,5 @@ tags = ["concurrency", "weak memory", "denotational semantics"]
 [extra]
 venue="Principle of Programming Languages"
 pdf = "presentation"
+youtube = "np2OczqEE-Y?si=eRVbkCOt7gStfGRs&amp;start=22139"
 +++
