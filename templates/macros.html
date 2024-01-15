@@ -204,7 +204,7 @@
 {% macro page_publish_metadata(page) %}
 {% if page.path is starting_with("/talks") %}
 {% if page.extra.pdf %}
-<a class="has-text-attachment" href="{{ page.extra.pdf }}.pdf" target="_blank">
+<a class="has-text-attachment" href="{{ page.path ~ page.extra.pdf }}.pdf" target="_blank">
   <span class="icon" title="presentation (pdf)">
     <i class="fas fa-file-pdf"></i>
   </span>
