@@ -1,6 +1,6 @@
 +++
 title="A Denotational Approach to Release/Acquire Concurrency"
-authors=["Yotam Dvir", "Ori Lahav", "Ohad Kammar"]
+authors=["Yotam Dvir", "Ohad Kammar", "Ori Lahav"]
 in_search_index = false
 
 [taxonomies]

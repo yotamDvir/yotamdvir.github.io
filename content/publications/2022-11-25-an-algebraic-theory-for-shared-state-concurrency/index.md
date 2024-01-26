@@ -1,6 +1,6 @@
 +++
 title="An Algebraic Theory for Shared-State Concurrency"
-authors=["Yotam Dvir", "Ori Lahav", "Ohad Kammar"]
+authors=["Yotam Dvir", "Ohad Kammar", "Ori Lahav"]
 slug="22_1"
 
 [taxonomies]
