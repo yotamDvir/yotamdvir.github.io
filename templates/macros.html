@@ -263,11 +263,13 @@
 </a>
 {% endfor %}
 {% endif %}
+{% if page.extra.doi %}
 <a class="has-text-doi" href="https://doi.org/{{ page.extra.doi }}" target="_blank">
   <span class="icon" title="{{ page.extra.doi }}">
     <i class="ai ai-doi"></i>
   </span>
 </a>
+{% endif %}
 <span class="icon">
   <i class="far fa-calendar-alt"></i>
 </span>
