@@ -211,7 +211,7 @@
   <span>slides</span>
 </a>
 {% endif %}
-{% elif page.path is starting_with("/publications") %}
+{% elif page.path is starting_with("/research") %}
 <span class="icon-text has-text-grey">
   <span class="icon">
     {% if page.authors | length == 1 %}
@@ -246,7 +246,7 @@
 </span>
 <span><time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time></span>
 {% endif %}
-{% if page.path is starting_with("/publications") %}
+{% if page.path is starting_with("/research") %}
 {% if page.extra.doi %}
 <a class="has-text-doi" href="https://doi.org/{{ page.extra.doi }}" target="_blank">
   <span class="icon" title="{{ page.extra.doi }}">
@@ -276,7 +276,7 @@
 {% macro page_subtitle_metadata(page) %}
 {% if page.path is starting_with("/talks") %}
 {{ page.extra.venue }}
-{% elif page.path is starting_with("/publications") %}
+{% elif page.path is starting_with("/research") %}
 {{ page.extra.venue }}
 {% if page.extra.distinctions %}
 {% for distinction in page.extra.distinctions %}
@@ -303,7 +303,7 @@
   </iframe>
 </div>
 {% endif %}
-{% elif page.path is starting_with("/publications") %}
+{% elif page.path is starting_with("/research") %}
 <p>
   <span class="has-text-info has-text-weight-semibold">Abstract: </span>
   {{ page.extra.abstract | safe }}
@@ -342,7 +342,7 @@
   </iframe>
 </div>
 {% endif %}
-{% elif page.path is starting_with("/publications") %}
+{% elif page.path is starting_with("/research") %}
 
 <p>
 
