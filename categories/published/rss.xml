@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title> - Published</title>
+      <link>https://yotamdvir.github.io</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://yotamdvir.github.io/categories/published/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 25 Nov 2022 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>An Algebraic Theory for Shared-State Concurrency</title>
+          <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
+          <author>Yotam Dvir</author>
+          <link>https://yotamdvir.github.io/research/aplas-22/</link>
+          <guid>https://yotamdvir.github.io/research/aplas-22/</guid>
+          <description></description>
+      </item>
+      <item>
+          <title>First-Order Quasi-canonical Proof Systems</title>
+          <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+          <author>Yotam Dvir</author>
+          <link>https://yotamdvir.github.io/research/tableaux-19/</link>
+          <guid>https://yotamdvir.github.io/research/tableaux-19/</guid>
+          <description></description>
+      </item>
+    </channel>
+</rss>
