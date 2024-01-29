@@ -1,0 +1,49 @@
+{% macro icons(page) %}
+
+  {% if page.extra.paper %}
+  <a class="has-text-primary-dark" href="{{ page.path }}paper.pdf" target="_blank">
+    <span class="icon-text">
+      <span class="icon" title="paper (pdf)">
+        <i class="fas fa-paperclip"></i>
+      </span>
+      <span class="mr-3">
+        Paper
+      </span>
+    </span>
+  </a>
+  {% endif %}
+
+  {% if page.extra.slides %}
+  <a class="has-text-primary-dark" href="{{ page.path }}slides.pdf" target="_blank">
+    <span class="icon" title="slides (pdf)">
+      <i class="fas fa-clapperboard"></i>
+    </span>
+    <span class="mr-3">
+      Slides
+    </span>
+  </a>
+  {% endif %}
+
+  {% if page.extra.poster %}
+  <a class="has-text-primary-dark" href="{{ page.path }}poster.pdf" target="_blank">
+    <span class="icon" title="poster (pdf)">
+      <i class="fas fa-person-chalkboard"></i>
+    </span>
+    <span class="mr-3">
+      Poster
+    </span>
+  </a>
+  {% endif %}
+
+  {% if page.extra.youtube %}
+  <a class="has-text-youtube" href="https://www.youtube.com/embed/{{ page.extra.youtube }}" target="_blank">
+    <span class="icon" title="talk (youtube)">
+      <i class="fab fa-youtube"></i>
+    </span>
+    <span class="mr-3">
+      Youtube
+    </span>
+  </a>
+  {% endif %}
+
+{% endmacro %}
