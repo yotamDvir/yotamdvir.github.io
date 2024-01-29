@@ -7,7 +7,7 @@ categories = ["Conference", "Presentation"]
 tags = ["concurrency", "algebraic effects", "denotational semantics"]
 
 [extra]
-venue="Programming Languages and Systems: 20th Asian Symposium, APLAS 2022"
+venue="APLAS 2022 (Programming Languages and Systems: 20th Asian Symposium)"
 pdf = "slides"
 youtube = "BP6TfC0wk5Y?si=ong03LcE3C-L--ZJ"
 +++
