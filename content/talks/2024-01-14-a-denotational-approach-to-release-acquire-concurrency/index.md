@@ -8,6 +8,6 @@ tags = ["concurrency", "weak memory", "denotational semantics"]
 
 [extra]
 venue="Principle of Programming Languages"
-pdf = "presentation"
+pdf = "slides"
 youtube = "np2OczqEE-Y?si=eRVbkCOt7gStfGRs&amp;start=22139"
 +++
