@@ -275,11 +275,17 @@
 {% endif %}
 {% endmacro %}
 
-{% macro page_subtitle_metadata(page) %}
-{% if page.path is starting_with("/talks") %}
+{% macro page_title_metadata(page) %}
+{% if page.path is starting_with("/research") %}
 {{ page.extra.venue }}
-{% elif page.path is starting_with("/research") %}
-{{ page.extra.venue }}
+{% else %}
+{{ page.title }}
+{% endif %}
+{% endmacro %}
+
+{% macro page_subtitle_metadata(page,news=false) %}
+{% if page.path is starting_with("/research") %}
+{% if news %} {{ page.title }} {% else %} {{ page.extra.venue }} {% endif %}
 {% if page.extra.distinctions %}
 {% for distinction in page.extra.distinctions %}
 <br/>
@@ -309,10 +315,12 @@
 <p>
   {{ attachments::icons(page=page) }}
 </p>
+{% if page.extra.abstract %}
 <p>
   <span class="has-text-info has-text-weight-semibold">Abstract: </span>
   {{ page.extra.abstract | safe }}
 </p>
+{% endif %}
 
 {% if page.extra.youtube %}
 <div class="youtube is-flex is-justify-content-center is-align-items-center">
@@ -349,6 +357,7 @@
 
 <p>
 
+  {% if page.extra.abstract %}
   <a class="has-text-info has-text-weight-semibold" href='{{ page.permalink }}'>
     <span class="icon">
       <i class="fas fa-cloud"></i>
@@ -357,6 +366,7 @@
       Abstract
     </span>
   </a>
+{% endif %}
   {{ attachments::icons(page=page) }}
 </p>
 

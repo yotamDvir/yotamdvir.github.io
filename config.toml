@@ -167,8 +167,9 @@ galleria.enabled = true
 navbar_items = [
     { code = "en", nav_items = [
         { url = "$BASE_URL/", name = "Home" },
-        { url = "$BASE_URL/posts", name = "Posts" },
-        { url = "$BASE_URL/research", name = "Research" },
+        { url = "$BASE_URL/posts", name = "Blog Posts" },
+        { url = "$BASE_URL/research", name = "Research News" },
+        { url = "$BASE_URL/categories/publication", name = "Publications" },
     ] },
 ]
 

@@ -1,30 +1,17 @@
 {% macro icons(page) %}
 
-  {% if page.extra.paper %}
-  <a class="has-text-primary-dark" href="{{ page.path }}paper.pdf" target="_blank">
+  {% for paper in page.extra.papers %}
+  <a class="has-text-primary-dark" href="{{ page.path }}{{ paper }}.pdf" target="_blank">
     <span class="icon-text">
-      <span class="icon" title="paper (pdf)">
+      <span class="icon" title="{{ paper | title }} (pdf)">
         <i class="fas fa-paperclip"></i>
       </span>
       <span class="mr-3">
-        Paper
+        {{ paper | title }}
       </span>
     </span>
   </a>
-  {% endif %}
-
-  {% if page.extra.full %}
-  <a class="has-text-primary-dark" href="{{ page.path }}full.pdf" target="_blank">
-    <span class="icon-text">
-      <span class="icon" title="full (pdf)">
-        <i class="fas fa-paperclip"></i>
-      </span>
-      <span class="mr-3">
-        Full
-      </span>
-    </span>
-  </a>
-  {% endif %}
+  {% endfor %}
 
   {% if page.extra.slides %}
   <a class="has-text-primary-dark" href="{{ page.path }}slides.pdf" target="_blank">

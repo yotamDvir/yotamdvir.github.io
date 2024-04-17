@@ -1,9 +1,5 @@
 {% extends 'base.html' %}
 
-{% block title %}
-{{ config.title }} | {{ section.title }}
-{% endblock title %}
-
 {% block content %}
 <section class="section">
   <div class="container">
@@ -24,12 +20,8 @@
 
         {% for page in pages %}
         <article class="box {% if page.draft %}has-background-warning-light{% endif %}">
-          <h2 class="title">
-            <a class="has-text-dark" href='{{ page.permalink }}'>
-              {{ page.title }}
-            </a>
-          </h2>
-          <p class="subtitle">{{ macros::page_subtitle_metadata(page=page) }}</p>
+          <h2 class="title has-text-dark">{{ macros::page_title_metadata(page=page) }}</h2>
+          <p class="subtitle">{{ macros::page_subtitle_metadata(page=page,news=true) }}</p>
           <div class="columns is-multiline is-gapless">
             <div class="column is-8">
               {{ macros::page_publish_metadata(page=page) }}

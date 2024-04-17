@@ -27,7 +27,7 @@
         {% if paginator %}
         {% set pages = paginator.pages %}
         {% else %}
-        {% set pages = term.pages %}
+        {% set pages = section.pages %}
         {% endif %}
 
         {% for page in pages %}
@@ -37,7 +37,7 @@
               {{ page.title }}
             </a>
           </h2>
-          <p class="subtitle">{{ page.description }}</p>
+          <p class="subtitle">{{ macros::page_subtitle_metadata(page=page) }}</p>
           <div class="columns is-multiline is-gapless">
             <div class="column is-8">
               {{ macros::page_publish_metadata(page=page) }}
