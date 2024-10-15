@@ -1,49 +1,62 @@
 {% macro icons(page) %}
 
-  {% for paper in page.extra.papers %}
-  <a class="has-text-primary-dark" href="{{ page.path }}{{ paper }}.pdf" target="_blank">
-    <span class="icon-text">
-      <span class="icon" title="{{ paper | title }} (pdf)">
-        <i class="fas fa-paperclip"></i>
-      </span>
-      <span class="mr-3">
-        {{ paper | title }}
-      </span>
-    </span>
-  </a>
-  {% endfor %}
-
-  {% if page.extra.slides %}
-  <a class="has-text-primary-dark" href="{{ page.path }}slides.pdf" target="_blank">
-    <span class="icon" title="slides (pdf)">
-      <i class="fas fa-clapperboard"></i>
-    </span>
-    <span class="mr-3">
-      Slides
-    </span>
-  </a>
-  {% endif %}
-
-  {% if page.extra.poster %}
-  <a class="has-text-primary-dark" href="{{ page.path }}poster.pdf" target="_blank">
-    <span class="icon" title="poster (pdf)">
+{% for x in page.extra.attachments %}
+{% set path = get_url(path="attachments/" ~ x['pdf'] ~ ".pdf") %}
+<a class="has-text-primary-dark" href="{{path}}" target="_blank">
+  <span class="icon-text">
+    <span class="icon" title="{{ page.title | title }} (pdf)">
+      {% if x['kind'] == "journal" %}
+      <i class="fas fa-newspaper"></i>
+      {% elif x['kind'] == "proceedings" %}
+      <i class="fas fa-people-roof"></i>
+      {% elif x['kind'] == "submission" %}
+      <i class="fas fa-paper-plane"></i>
+      {% elif x['kind'] == "slides" %}
       <i class="fas fa-person-chalkboard"></i>
+      {% elif x['kind'] == "poster" %}
+      <i class="fas fa-scroll"></i>
+      {% else %}
+      <i class="fas fa-clapperboard"></i>
+      {% endif %}
     </span>
     <span class="mr-3">
-      Poster
+      {{ x['kind'] }}
     </span>
-  </a>
-  {% endif %}
+  </span>
+</a>
+{% endfor %}
 
-  {% if page.extra.youtube %}
-  <a class="has-text-youtube" href="https://www.youtube.com/embed/{{ page.extra.youtube }}" target="_blank">
-    <span class="icon" title="talk (youtube)">
-      <i class="fab fa-youtube"></i>
-    </span>
-    <span class="mr-3">
-      Youtube
-    </span>
-  </a>
-  {% endif %}
+{% if page.extra.slides %}
+<a class="has-text-primary-dark" href="{{ page.path }}slides.pdf" target="_blank">
+  <span class="icon" title="slides (pdf)">
+    <i class="fas fa-clapperboard"></i>
+  </span>
+  <span class="mr-3">
+    Slides
+  </span>
+</a>
+{% endif %}
+
+{% if page.extra.poster %}
+<a class="has-text-primary-dark" href="{{ page.path }}poster.pdf" target="_blank">
+  <span class="icon" title="poster (pdf)">
+    <i class="fas fa-person-chalkboard"></i>
+  </span>
+  <span class="mr-3">
+    Poster
+  </span>
+</a>
+{% endif %}
+
+{% if page.extra.youtube %}
+<a class="has-text-youtube" href="https://www.youtube.com/embed/{{ page.extra.youtube }}" target="_blank">
+  <span class="icon" title="talk (youtube)">
+    <i class="fab fa-youtube"></i>
+  </span>
+  <span class="mr-3">
+    Youtube
+  </span>
+</a>
+{% endif %}
 
 {% endmacro %}

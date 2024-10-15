@@ -276,21 +276,65 @@
 {% endmacro %}
 
 {% macro page_title_metadata(page) %}
-{% if page.path is starting_with("/research") %}
-{{ page.extra.venue }}
-{% else %}
-{{ page.title }}
-{% endif %}
-{% endmacro %}
+{% if page.extra.review %} <span class="has-text-warning-dark"> {% endif %}
+  {% if page.path is starting_with("/research") %}
+  {% if page.extra.review %}
+  <i class="fas fa-person-praying"></i>
+  Submitted a paper to {{ page.extra.venue }} for review
+  {% elif page.extra.accepted %}
+  <i class="fas fa-champagne-glasses"></i>
+  Submission to {{ page.extra.venue }} accepted
+  {% elif "Poster" in page.taxonomies.categories %}
+  <i class="fas fa-scroll"></i>
+  Presented a poster at {{ page.extra.venue }}
+  {% elif "Conference" in page.taxonomies.categories or "Workshop" in page.taxonomies.categories  %}
+  <i class="fas fa-person-chalkboard"></i>
+  Gave a talk at {{ page.extra.venue }}
+  {% elif "Journal" in page.taxonomies.categories %}
+  <i class="fas fa-newspaper"></i>
+  Published at {{ page.extra.venue }}
+  {% else %}
+  {{ page.extra.venue }}
+  {% endif %}
+  {% else %} {{ page.title }} {% endif %}
+  {% if page.extra.review %} </span> {% endif %}
+  {% endmacro %}
 
 {% macro page_subtitle_metadata(page,news=false) %}
 {% if page.path is starting_with("/research") %}
-{% if news %} {{ page.title }} {% else %} {{ page.extra.venue }} {% endif %}
+{% if page.extra.review %} <span class="has-text-warning-dark"> {% endif %}
+  {% if news %} Title: {{ page.title }} {% else %} Venue: {{ page.extra.venue }} {% endif %}
+{% if page.extra.review %} </span> {% endif %}
+{% if not news %}
+
+{% if page.extra.review %}
+<br/>
+<span class="has-text-warning-dark">
+  <i class="fas fa-paper-plane"></i>
+  Submitted for review
+</span>
+{% endif %}
+{% if page.extra.accepted %}
+<br/>
+<span class="has-text-info-dark">
+  <i class="fas fa-stamp"></i>
+  Accepted for publication
+</span>
+{% endif %}
+{% if page.extra.citation %}
+<br/>
+<small> <span class="has-text-warning-dark">{{ page.extra.citation }}</span> </small>
+{% endif %}
 {% if page.extra.distinctions %}
 {% for distinction in page.extra.distinctions %}
 <br/>
-<span class="has-text-success-dark">{{ distinction }}</span>
+<span class="has-text-success-dark">
+  <i class="fas fa-medal"></i>
+  {{ distinction }}
+</span>
 {% endfor %}
+{% endif %}
+
 {% endif %}
 {% else %}
 {{ page.description }}

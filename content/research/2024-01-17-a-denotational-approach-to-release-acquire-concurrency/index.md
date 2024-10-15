@@ -4,12 +4,14 @@ authors=["Yotam Dvir"]
 slug="popl-src-24"
 
 [taxonomies]
-categories = ["Poster","Competition"]
+categories = ["Poster", "Conference", "Competition"]
 tags = ["concurrency", "weak memory", "denotational semantics"]
 
 [extra]
 venue="POPL/SRC 2024"
 venuefull="POPL 2024 Student Research Competition"
-papers = ["extended abstract"]
-poster = true
+attachments=[
+  {kind = "poster"      , pdf = "popl-24-poster"},
+  {kind = "abstract"    , pdf = "popl-24-abstract"},
+]
 +++
