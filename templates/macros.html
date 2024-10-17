@@ -243,7 +243,7 @@
   <span class="icon">
     <i class="far fa-calendar-alt"></i>
   </span>
-  <span><time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time></span>
+  <span><time datetime="{{ page.date }}">{{ page.date | date(format='%d %b %Y') }}</time></span>
   {% endif %}
 </span>
 {% endif %}
@@ -254,7 +254,7 @@
 <span class="icon">
   <i class="far fa-calendar-alt"></i>
 </span>
-<span><time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time></span>
+<span><time datetime="{{ page.date }}">{{ page.date | date(format='%d %b %Y') }}</time></span>
 {% endif %}
 {% if page.path is starting_with("/research") %}
 {% if page.extra.doi %}
@@ -267,7 +267,7 @@
 <span class="icon is-small">
   <i class="far fa-calendar-alt"></i>
 </span>
-<span><time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time></span>
+<span><time datetime="{{ page.date }}">{{ page.date | date(format='%d %b %Y') }}</time></span>
 {% endif %}
 {% if page.path is starting_with("/posts") %}
 <span class="icon-text has-text-grey">
