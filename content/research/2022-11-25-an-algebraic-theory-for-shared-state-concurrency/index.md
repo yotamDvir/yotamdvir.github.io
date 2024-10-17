@@ -8,6 +8,7 @@ categories = ["Publication", "Conference"]
 tags = ["concurrency", "algebraic effects", "denotational semantics"]
 
 [extra]
+navtitle="Algebraic Theory for Shared-State (APLAS)"
 venue="OOPSLA/APLAS 2022"
 venuefull="Programming Languages and Systems: 20th Asian Symposium"
 doi="10.1007/978-3-031-21037-2_1"

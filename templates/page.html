@@ -83,13 +83,22 @@
               <span class="icon mr-2">
                 <i class="fas fa-arrow-circle-left"></i>
               </span>
+              {% if page.later.extra.navtitle %}
+              {{ page.later.extra.navtitle }}
+              {% else %}
               {{ page.later.title }}
+              {% endif %}
             </a>
           </div>
           {% endif %} {% if page.earlier %}
           <div class="level-item has-text-centered">
             <a class="button is-black is-outlined" href="{{ page.earlier.permalink }}">
-              {{ page.earlier.title }}<span class="icon ml-2">
+              {% if page.earlier.extra.navtitle %}
+              {{ page.earlier.extra.navtitle }}
+              {% else %}
+              {{ page.earlier.title }}
+              {% endif %}
+              <span class="icon ml-2">
                 <i class="fas fa-arrow-circle-right"></i>
               </span>
             </a>
@@ -100,13 +109,22 @@
               <span class="icon mr-2">
                 <i class="fas fa-arrow-circle-left"></i>
               </span>
+              {% if page.heavier.extra.navtitle %}
+              {{ page.heavier.extra.navtitle }}
+              {% else %}
               {{ page.heavier.title }}
+              {% endif %}
             </a>
           </div>
           {% endif %} {% if page.lighter %}
           <div class="level-item has-text-centered">
             <a class="button is-black is-outlined" href="{{ page.lighter.permalink }}">
-              {{ page.lighter.title }}<span class="icon ml-2">
+              {% if page.lighter.extra.navtitle %}
+              {{ page.lighter.extra.navtitle }}
+              {% else %}
+              {{ page.lighter.title }}
+              {% endif %}
+              <span class="icon ml-2">
                 <i class="fas fa-arrow-circle-right"></i>
               </span>
             </a>
@@ -117,13 +135,22 @@
               <span class="icon mr-2">
                 <i class="fas fa-arrow-circle-left"></i>
               </span>
+              {% if page.higher.extra.navtitle %}
+              {{ page.higher.extra.navtitle }}
+              {% else %}
               {{ page.higher.title }}
+              {% endif %}
             </a>
           </div>
           {% endif %} {% if page.lower %}
           <div class="level-item has-text-centered">
             <a class="button is-black is-outlined" href="{{ page.lower.permalink }}">
-              {{ page.lower.title }}<span class="icon ml-2">
+              {% if page.lower.extra.navtitle %}
+              {{ page.lower.extra.navtitle }}
+              {% else %}
+              {{ page.lower.title }}
+              {% endif %}
+              <span class="icon ml-2">
                 <i class="fas fa-arrow-circle-right"></i>
               </span>
             </a>

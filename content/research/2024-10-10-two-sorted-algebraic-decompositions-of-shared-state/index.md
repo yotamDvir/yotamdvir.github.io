@@ -8,6 +8,7 @@ categories = ["Publication", "Conference"]
 tags = ["concurrency", "algebraic effects", "denotational semantics"]
 
 [extra]
+navtitle="Two-sorted Brookes Decompositions (FoSSaCS)"
 venue="ETAPS/FoSSaCS 2025"
 venuefull="28th International Conference on Foundations of Software Science and Computation Structures"
 review = true

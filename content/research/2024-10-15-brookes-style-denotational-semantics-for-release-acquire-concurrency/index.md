@@ -8,6 +8,7 @@ categories = ["Publication", "Journal"]
 tags = ["concurrency", "weak memory", "denotational semantics"]
 
 [extra]
+navtitle="Release/Acquire Denotational Semantics (TOPLAS)"
 venue="TOPLAS"
 venuefull="Transactions on Programming Languages and Systems"
 accepted = true

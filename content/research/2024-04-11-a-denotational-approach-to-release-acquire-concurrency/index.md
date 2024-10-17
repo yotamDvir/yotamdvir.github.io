@@ -8,6 +8,7 @@ categories = ["Publication", "Conference"]
 tags = ["concurrency", "weak memory", "denotational semantics"]
 
 [extra]
+navtitle="Release/Acquire Denotational Semantics (ESOP)"
 venue="ETAPS/ESOP 2024"
 venuefull="33rd European Symposium on Programming"
 doi="10.1007/978-3-031-57267-8_5"

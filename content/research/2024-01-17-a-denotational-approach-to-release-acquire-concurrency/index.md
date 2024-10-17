@@ -8,6 +8,7 @@ categories = ["Poster", "Conference", "Competition"]
 tags = ["concurrency", "weak memory", "denotational semantics"]
 
 [extra]
+navtitle="Release/Acquire Denotational Semantics (POPL-SRC)"
 venue="POPL/SRC 2024"
 venuefull="POPL 2024 Student Research Competition"
 attachments=[
