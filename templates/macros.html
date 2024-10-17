@@ -311,7 +311,7 @@
 {% macro page_subtitle_metadata(page,news=false) %}
 {% if page.path is starting_with("/research") %}
 {% if page.extra.review %} <span class="has-text-warning-dark"> {% endif %}
-  {% if news %} Title: {{ page.title }} {% else %} Venue: {{ page.extra.venue }} {% endif %}
+  {% if news %} <span class="has-text-weight-medium">Title:</span> {{ page.title }} {% else %} <span class="has-text-weight-medium">Venue:</span> {{ page.extra.venue }} {% endif %}
 {% if page.extra.review %} </span> {% endif %}
 {% if not news %}
 
@@ -415,7 +415,7 @@
       <i class="fas fa-cloud"></i>
     </span>
     <span class="mr-3">
-      Abstract
+      abstract
     </span>
   </a>
 {% endif %}
