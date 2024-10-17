@@ -145,6 +145,14 @@
   </a>
   {% endif %}
 
+  {% if social_config.dblp %}
+  <a class="has-text-dblp" href="https://dblp.org/pid/{{ social_config.dblp }}" target="_blank">
+    <span class="icon is-large" title="dblp">
+      <i class="ai ai-dblp ai-lg"></i>
+    </span>
+  </a>
+  {% endif %}
+
   {% if social_config.google_scholar %}
   <a class="has-text-googlescholar" href="https://scholar.google.com/citations?user={{ social_config.google_scholar }}" target="_blank">
     <span class="icon is-large" title="Google Scholar">
