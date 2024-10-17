@@ -19,11 +19,19 @@
       <i class="fas fa-clapperboard"></i>
       {% endif %}
     </span>
-    <span class="mr-3">
+    <span class="{% if not x['slug'] %}mr-3{% endif %}">
       {{ x['kind'] }}
     </span>
   </span>
 </a>
+{% if x['slug'] %}
+{% set slugpath = get_url(path="research/" ~ x['slug']) %}
+<a class="has-text-primary" href="{{slugpath}}" target="_blank">
+  <i class="fas fa-magnifying-glass-arrow-right"></i>
+  <span class="{% if x['slug'] %}mr-3{% endif %}">
+  </span>
+</a>
+{% endif %}
 {% endfor %}
 
 {% if page.extra.slides %}
