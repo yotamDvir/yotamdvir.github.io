@@ -33,7 +33,7 @@
         {% for page in pages %}
         <article class="box {% if page.draft %}has-background-warning-light{% endif %}">
           <h2 class="title is-3">
-            <a class="has-text{% if page.extra.review %}-warning{% endif %}-dark" href='{{ page.permalink }}'>
+            <a class="has-text{% if page.extra.review %}-warning{% else %}-info{% endif %}-dark" href='{{ page.permalink }}'>
               {{ page.title }}
             </a>
           </h2>
