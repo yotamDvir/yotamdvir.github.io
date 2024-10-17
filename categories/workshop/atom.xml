@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Workshop</title>
+    <link href="https://yotamdvir.github.io/categories/workshop/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://yotamdvir.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-01-14T00:00:00+00:00</updated>
+    <id>https://yotamdvir.github.io/categories/workshop/atom.xml</id>
+    <entry xml:lang="en">
+        <title>A Denotational Approach to Release&#x2F;Acquire Concurrency</title>
+        <published>2024-01-14T00:00:00+00:00</published>
+        <updated>2024-01-14T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/galop-24/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/galop-24/</id>
+        <content type="html"></content>
+    </entry>
+</feed>
