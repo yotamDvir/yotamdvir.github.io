@@ -169,6 +169,14 @@
   </a>
   {% endif %}
 
+  {% if social_config.arxiv %}
+  <a class="has-text-arxiv" href="https://arxiv.org/a/{{ social_config.arxiv }}" target="_blank">
+    <span class="icon is-large" title="arXiv">
+      <i class="ai ai-arxiv"></i>
+    </span>
+  </a>
+  {% endif %}
+
   {% if social_config.keybase %}
   <a class="has-text-keybase" href="https://keybase.io/{{ social_config.keybase }}" target="_blank">
     <span class="icon is-large" title="Keybase">
@@ -257,6 +265,13 @@
 <span><time datetime="{{ page.date }}">{{ page.date | date(format='%d %b %Y') }}</time></span>
 {% endif %}
 {% if page.path is starting_with("/research") %}
+{% if page.extra.arxiv %}
+<a class="has-text-arxiv" href="https://arxiv.org/abs/{{ page.extra.arxiv }}" target="_blank">
+  <span class="icon" title="{{ page.extra.arxiv }}">
+    ar<i class="ai ai-arxiv"></i>iv&nbsp;&nbsp;
+  </span>
+</a>
+{% endif %}
 {% if page.extra.doi %}
 <a class="has-text-doi" href="https://doi.org/{{ page.extra.doi }}" target="_blank">
   <span class="icon" title="{{ page.extra.doi }}">
