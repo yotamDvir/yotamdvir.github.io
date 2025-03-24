@@ -11,6 +11,8 @@
       <i class="fas fa-people-roof"></i>
       {% elif x['kind'] == "submission" %}
       <i class="fas fa-paper-plane"></i>
+      {% elif x['kind'] == "rolling release" %}
+      <i class="fas fa-paint-roller"></i>
       {% elif x['kind'] == "slides" %}
       <i class="fas fa-person-chalkboard"></i>
       {% elif x['kind'] == "poster" %}
@@ -21,6 +23,12 @@
     </span>
     <span class="{% if not x['slug'] %}mr-3{% endif %}">
       {{ x['kind'] }}
+      {% if x['date'] %}
+      <!-- <span class="icon is-small">
+           <i class="far fa-calendar-alt"></i>
+           </span> -->
+      <span>(<time datetime="{{ x['date'] }}">{{ x['date'] | date(format='%d %b %Y') }}</time>)</span>
+      {% endif %}
     </span>
   </span>
 </a>
