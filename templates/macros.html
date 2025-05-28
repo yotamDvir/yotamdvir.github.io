@@ -310,7 +310,9 @@
   {% elif "Poster" in page.taxonomies.categories %}
   <i class="fas fa-scroll"></i>
   Presented a poster at {{ page.extra.venue }}
-  {% elif "Conference" in page.taxonomies.categories or "Workshop" in page.taxonomies.categories  %}
+  {% elif "Conference" in page.taxonomies.categories
+  or "Workshop" in page.taxonomies.categories
+  or "Visit" in page.taxonomies.categories  %}
   <i class="fas fa-person-chalkboard"></i>
   Gave a talk at {{ page.extra.venue }}
   {% elif "Journal" in page.taxonomies.categories %}
