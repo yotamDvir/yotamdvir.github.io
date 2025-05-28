@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Publication</title>
+    <link href="https://yotamdvir.github.io/categories/publication/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://yotamdvir.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-02-05T00:00:00+00:00</updated>
+    <id>https://yotamdvir.github.io/categories/publication/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Two-sorted Algebraic Decompositions of Brookes&#x27;s Shared-State Denotational Semantics</title>
+        <published>2025-02-05T00:00:00+00:00</published>
+        <updated>2025-02-05T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/fossacs-25/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/fossacs-25/</id>
+        <content type="html"></content>
+    </entry>
+    <entry xml:lang="en">
+        <title>A Brookes-Style Denotational Semantics for Release&#x2F;Acquire Concurrency</title>
+        <published>2024-09-27T00:00:00+00:00</published>
+        <updated>2024-09-27T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/toplas-24/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/toplas-24/</id>
+        <content type="html"></content>
+    </entry>
+    <entry xml:lang="en">
+        <title>A Denotational Approach to Release&#x2F;Acquire Concurrency</title>
+        <published>2024-04-11T00:00:00+00:00</published>
+        <updated>2024-04-11T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/esop-24/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/esop-24/</id>
+        <content type="html"></content>
+    </entry>
+    <entry xml:lang="en">
+        <title>An Algebraic Theory for Shared-State Concurrency</title>
+        <published>2022-11-25T00:00:00+00:00</published>
+        <updated>2022-11-25T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/aplas-22/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/aplas-22/</id>
+        <content type="html"></content>
+    </entry>
+    <entry xml:lang="en">
+        <title>First-Order Quasi-canonical Proof Systems</title>
+        <published>2019-09-03T00:00:00+00:00</published>
+        <updated>2019-09-03T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/tableaux-19/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/tableaux-19/</id>
+        <content type="html"></content>
+    </entry>
+</feed>

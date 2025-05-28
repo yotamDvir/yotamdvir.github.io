@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - concurrency</title>
+    <link href="https://yotamdvir.github.io/tags/concurrency/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://yotamdvir.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-05-19T00:00:00+00:00</updated>
+    <id>https://yotamdvir.github.io/tags/concurrency/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Monadic and Algebraic Denotational Semantics for Concurrent Shared State</title>
+        <published>2025-05-19T00:00:00+00:00</published>
+        <updated>2025-05-19T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/visit-tartu-25/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/visit-tartu-25/</id>
+        <content type="html"></content>
+    </entry>
+    <entry xml:lang="en">
+        <title>Two-sorted Algebraic Decompositions of Brookes&#x27;s Shared-State Denotational Semantics</title>
+        <published>2025-02-05T00:00:00+00:00</published>
+        <updated>2025-02-05T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/fossacs-25/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/fossacs-25/</id>
+        <content type="html"></content>
+    </entry>
+    <entry xml:lang="en">
+        <title>A Brookes-Style Denotational Semantics for Release&#x2F;Acquire Concurrency</title>
+        <published>2024-09-27T00:00:00+00:00</published>
+        <updated>2024-09-27T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/toplas-24/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/toplas-24/</id>
+        <content type="html"></content>
+    </entry>
+    <entry xml:lang="en">
+        <title>A Denotational Approach to Release&#x2F;Acquire Concurrency</title>
+        <published>2024-04-11T00:00:00+00:00</published>
+        <updated>2024-04-11T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/esop-24/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/esop-24/</id>
+        <content type="html"></content>
+    </entry>
+    <entry xml:lang="en">
+        <title>A Denotational Approach to Release&#x2F;Acquire Concurrency</title>
+        <published>2024-01-17T00:00:00+00:00</published>
+        <updated>2024-01-17T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/popl-src-24/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/popl-src-24/</id>
+        <content type="html"></content>
+    </entry>
+    <entry xml:lang="en">
+        <title>A Denotational Approach to Release&#x2F;Acquire Concurrency</title>
+        <published>2024-01-14T00:00:00+00:00</published>
+        <updated>2024-01-14T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/galop-24/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/galop-24/</id>
+        <content type="html"></content>
+    </entry>
+    <entry xml:lang="en">
+        <title>An Algebraic Theory for Shared-State Concurrency</title>
+        <published>2022-11-25T00:00:00+00:00</published>
+        <updated>2022-11-25T00:00:00+00:00</updated>
+        <author>
+          <name>Yotam Dvir</name>
+        </author>
+        <link rel="alternate" href="https://yotamdvir.github.io/research/aplas-22/" type="text/html"/>
+        <id>https://yotamdvir.github.io/research/aplas-22/</id>
+        <content type="html"></content>
+    </entry>
+</feed>
